@@ -1,0 +1,160 @@
+body {
+    background: rgba(244, 241, 241, 0.67);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    background: rgba(53, 52, 52, 0.732);
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    color: rgb(53, 53, 53);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+h3{
+    color: rgb(53, 53, 53);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+p{
+    color: rgb(53, 53, 53);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.wrapper > div:nth-child(odd){
+    background: rgb(185, 179, 179);
+    padding: 1em;
+}
+
+.wrapper > div{
+    background: rgb(104, 104, 104);
+    padding: 1em;
+}
+
+#contact{
+    color: #fff;
+}
+
+#phone{
+    color: #fff;
+}
+
+.attendance{
+    background: rgb(104, 104, 104);
+    width: 200vh;
+    margin-left: 20px;
+}
+
+h4{
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.attendance-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    bottom: 5vh;
+}
+
+
+.attendance-items > div:nth-child(odd){
+    background: rgb(185, 179, 179);
+    padding: 1em;
+}
+
+.attendance-items > div{
+    background: rgb(185, 179, 179);
+    padding: 1em;
+}
+
+
+button{
+    width: 200px;
+    height: 30px;
+    background: rgb(185, 179, 179);
+    cursor: pointer;
+}
+
+button:hover{
+    background: black;
+    color: rgb(185, 179, 179);;
+}
+
+#send-el {
+    width: 200px;
+    height: 30px;
+    background: rgb(104, 104, 104);
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    align-self: center;
+    margin-left: 90vh;
+}
+
+#send-el:hover{
+    background: black;
+    color: rgb(185, 179, 179);;
+}
+
+@media (max-width: 700px){
+    h1{
+        height: 60px;
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .attendance { 
+        width: 100%;
+        margin: 0;
+    }
+
+    h4{
+        font-size: 40px;
+    }
+
+    .attendance-items{
+        grid-template-columns:  1fr;
+        margin-left: 3px;
+    }
+
+    #send-el{
+        margin-left: 10vh;
+        background: rgb(213, 207, 207);
+    }
+}
