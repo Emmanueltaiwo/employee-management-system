@@ -109,23 +109,13 @@ button:hover{
     color: rgb(185, 179, 179);;
 }
 
-#send-el {
-    width: 200px;
-    height: 30px;
-    background: rgb(104, 104, 104);
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    align-self: center;
-    margin-left: 90vh;
+
+.buttons{
+    margin-left: 30vh;
 }
 
-#send-el:hover{
-    background: black;
-    color: rgb(185, 179, 179);;
-}
 
-@media (max-width: 700px){
+@media (max-width: 1100px){
     h1{
         height: 60px;
         font-size: 30px;
@@ -153,8 +143,20 @@ button:hover{
         margin-left: 3px;
     }
 
-    #send-el{
+    .buttons{
         margin-left: 10vh;
-        background: rgb(213, 207, 207);
     }
+
+    #employee2-btn{
+        margin-top: 3vh;
+    }
+
+    #employee3-btn{
+        margin-top: 3vh;
+    }
+
+    #employee4-btn{
+        margin-top: 3vh;
+    }
+
 }

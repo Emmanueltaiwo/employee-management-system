@@ -70,7 +70,8 @@ function date4() {
 }
 
 
-if (currentTime <= 9) {
+//ADDING AN IF TO SEND AN ALERT IF THE EMPLOYEE IS EARLY OR LATE FOR WORK
+if (time.getHours() <= 9) {
     alert("Wohoo! You are early for work")
 }
 
@@ -78,6 +79,26 @@ else {
     alert("You are Late for work")
 }
 
-function send() {
-    console.log("Emmanuel resumed work at " + currentTime + timeDetails + " on the" + currentDate)
+//GIVING EACH EMPLOYEES A NAME THROUGH TEXTCONTENT
+let employee1Name = employee1El.textContent = "Desire"
+let employee2Name = employee2El.textContent = "Samuel"
+let employee3Name = employee3El.textContent = "Yemisi"
+let employee4Name = employee4El.textContent = "Emmanuel"
+
+
+//ADDING FUNCTIONS TO EACH OF THE SEND BUTTON
+function send1() {
+    console.log(employee1Name + " resumed work by " + currentTime + " on the " + currentDate)
+}
+
+function send2() {
+    console.log(employee2Name + " resumed work by " + currentTime + " on the " + currentDate)
+}
+
+function send3() {
+    console.log(employee3Name + " resumed work by " + currentTime + " on the " + currentDate)
+}
+
+function send4() {
+    console.log(employee4Name + " resumed work by " + currentTime + " on the " + currentDate)
 }
